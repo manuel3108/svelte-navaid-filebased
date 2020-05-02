@@ -3,13 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "release": "np"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "capitalize": "^2.0.3",
     "directory-tree": "^2.2.4",
+    "np": "^6.2.3",
     "sade": "^1.7.3",
     "svelte-navaid": "^0.1.1"
-  }
+  },
+  "files": [
+    "src"
+  ]
 }
