@@ -5,9 +5,6 @@ const watch = require('watch');
 
 
 let imports = [];
-imports.push("import Router from 'svelte-navaid/Router.svelte';");
-imports.push("import Route from 'svelte-navaid/Route.svelte';");
-
 let currentDirPath = null;
 let options = null;
 
@@ -33,7 +30,10 @@ module.exports = function (dir, opts) {
 
 function work() {
     imports = [];
-    content = "";
+    imports.push("import Router from 'svelte-navaid/Router.svelte';");
+    imports.push("import Route from 'svelte-navaid/Route.svelte';");
+
+    components = "";
 
     console.log("> generating router for", options.dir)
     
