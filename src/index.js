@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const sade = require('sade');
 const generate = require('./generate') 
  

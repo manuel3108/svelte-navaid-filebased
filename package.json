@@ -17,5 +17,8 @@
   },
   "files": [
     "src"
-  ]
+  ],
+  "bin": {
+    "svelte-navaid-filebased": "src/index.js"
+  }
 }

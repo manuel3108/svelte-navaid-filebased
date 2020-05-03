@@ -5,7 +5,7 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public --single",
-    "generate": "node ../src/"
+    "generate": "svelte-navaid-filebased"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "11.0.2",
@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "sirv-cli": "^0.4.4",
-    "svelte-navaid": "^0.1.1"
+    "svelte-navaid": "^0.1.1",
+    "svelte-navaid-filebased": "file:.."
   }
 }
