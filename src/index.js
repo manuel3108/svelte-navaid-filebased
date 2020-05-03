@@ -9,5 +9,6 @@ sade('genrate [dir]', true)
   .option('-d, --dir', 'the location of the routes directory', 'src/routes/')
   .option('-b, --basepath', 'the location of the routes directory', '')
   .option('-o, --output', 'the file where the routes should be written to', 'src/Routes.svelte')
+  .option('-D, --dev', 'enable dev mode and watch dir')
   .action(generate)
   .parse(process.argv);

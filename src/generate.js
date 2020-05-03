@@ -1,6 +1,7 @@
 const dirTree = require("directory-tree");
 const fs = require('fs');
-const capitalize = require('capitalize')
+const capitalize = require('capitalize');
+const watch = require('watch');
 
 
 let imports = [];
@@ -15,10 +16,23 @@ let components = "";
 module.exports = function (dir, opts) {
     options = opts;
 
+    if(options.dev) {
+        watch.createMonitor(options.dir, function (monitor) {
+            monitor.on("created", function (f, stat) {
+                work();
+            })
+            monitor.on("removed", function (f, stat) {
+                work();
+            })
+        })
+    } else {
+        work();
+    }
+}
+
+function work() {
     console.log("> generating router for", options.dir)
-
-    paths = [];
-
+    
     const tree = dirTree(options.dir, { extensions: /\.svelte/ });
 
     components += `<Router>\n`

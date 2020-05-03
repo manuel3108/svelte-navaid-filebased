@@ -13,7 +13,8 @@
     "directory-tree": "^2.2.4",
     "np": "^6.2.3",
     "sade": "^1.7.3",
-    "svelte-navaid": "^0.1.1"
+    "svelte-navaid": "^0.1.1",
+    "watch": "^1.0.2"
   },
   "files": [
     "src"
