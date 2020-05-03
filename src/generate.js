@@ -25,12 +25,16 @@ module.exports = function (dir, opts) {
                 work();
             })
         })
+        work();
     } else {
         work();
     }
 }
 
 function work() {
+    imports = [];
+    content = "";
+
     console.log("> generating router for", options.dir)
     
     const tree = dirTree(options.dir, { extensions: /\.svelte/ });
