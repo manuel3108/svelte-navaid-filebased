@@ -9,10 +9,10 @@ import NestedSite from './routes/nested/site.svelte'
 import OtherdirIndex from './routes/otherDir/index.svelte'
 </script>
 <Router>
-<Route path="/" component={Index} />
-<Route path="/nested/doublenested/asd" component={NestedDoublenestedAsd} />
-<Route path="/nested/doublenested/" component={NestedDoublenestedIndex} />
-<Route path="/nested/" component={NestedIndex} />
-<Route path="/nested/site" component={NestedSite} />
-<Route path="/otherDir/" component={OtherdirIndex} />
+<Route path="/backend/" component={Index} />
+<Route path="/backend/nested/doublenested/asd" component={NestedDoublenestedAsd} />
+<Route path="/backend/nested/doublenested/" component={NestedDoublenestedIndex} />
+<Route path="/backend/nested/" component={NestedIndex} />
+<Route path="/backend/nested/site" component={NestedSite} />
+<Route path="/backend/otherDir/" component={OtherdirIndex} />
 </Router>

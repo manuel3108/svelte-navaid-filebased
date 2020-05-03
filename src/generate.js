@@ -48,6 +48,10 @@ function processFile(child) {
     route = "/" + route;
     route = route.replace(".svelte", "")
 
+    if(options.basepath !== "") {
+        route = options.basepath + route;
+    }
+
     let importPath = child.path.replace("src/", "./");
     let importName = importPath.replace("./routes/", "");
     importName = importName.replace(/\//g, ' ');
@@ -57,7 +61,7 @@ function processFile(child) {
     imports.push(`import ${importName} from '${importPath}'`);
     components += `<Route path="${route}" component={${importName}} />\n`
 
-    console.log("found file", child.path, importName)
+    console.log("found file", child.path)
 }
 
 function writeFile() {
