@@ -2,17 +2,16 @@
 	export let name;
 
 	import Routes from './Routes.svelte'
-	import Link from 'svelte-navaid/Link.svelte';
 </script>
 
-<Link href="/">Home</Link>
-<Link href="/nested/">nested</Link>
-<Link href="/nested/site/">nested/site</Link>
-<Link href="/nested/doublenested/">nested/doublenested</Link>
-<Link href="/nested/doublenested/asd/">nested/doublenested/asd</Link>
-<Link href="/otherdir/">otherdir</Link>
-
-
+<a href="/">Home</a>
+<a href="/pages/">Pages</a>
+<a href="/foo/">Foo</a>
+<a href="/nested/">nested</a>
+<a href="/nested/site/">nested/site</a>
+<a href="/nested/doublenested/">nested/doublenested</a>
+<a href="/nested/doublenested/asd/">nested/doublenested/asd</a>
+<a href="/otherdir/">otherdir</a>
 
 <main>
 	<h1>Hello {name}!</h1>

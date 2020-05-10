@@ -2,8 +2,10 @@
   "name": "svelte-app",
   "version": "1.0.0",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
+    "build": "npm run generate && rollup -c",
+    "dev": "run-p dev:routes dev:svelte",
+    "dev:svelte": "rollup -c -w",
+    "dev:routes": "svelte-navaid-filebased -D",
     "start": "sirv public --single",
     "generate": "svelte-navaid-filebased"
   },
@@ -17,8 +19,8 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "npm-run-all": "^4.1.5",
     "sirv-cli": "^0.4.4",
-    "svelte-navaid": "^0.1.1",
     "svelte-navaid-filebased": "file:.."
   }
 }

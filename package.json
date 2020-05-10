@@ -11,9 +11,8 @@
   "dependencies": {
     "capitalize": "^2.0.3",
     "directory-tree": "^2.2.4",
-    "np": "^6.2.3",
+    "navaid": "^1.1.1",
     "sade": "^1.7.3",
-    "svelte-navaid": "^0.1.1",
     "watch": "^1.0.2"
   },
   "files": [
@@ -21,5 +20,8 @@
   ],
   "bin": {
     "svelte-navaid-filebased": "src/index.js"
+  },
+  "devDependencies": {
+    "np": "^6.2.3"
   }
 }
