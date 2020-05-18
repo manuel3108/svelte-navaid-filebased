@@ -40,7 +40,7 @@ function work() {
 
     console.log("> generating router for", options.dir)
     
-    const tree = dirTree(options.dir, { extensions: /\.svelte/ });
+    const tree = dirTree(options.dir, { extensions: /\.svelte/, normalizePath: true });
 
     process(tree)
 
