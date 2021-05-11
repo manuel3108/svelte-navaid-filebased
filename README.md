@@ -1,4 +1,7 @@
-# svelte-navaid-filebased
+# [Archived] svelte-navaid-filebased
+# Important:
+I will no longer support this as there is no use for this anymore, as Sveltekit brings it's own router.
+
 Is a really basic file-based router. Uses [Navaid](https://github.com/lukeed/navaid) as one of the smallest available routers. Currently only works with pure svelte (no sapper), but should easily be converted to whatever you want.
 
 ## Get started
